@@ -1,32 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "hasty_progressive_crafting",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Hasty Progressive Crafting",
+  "description": "This speeds up progressive crafting items significantly with haste beacon. 2x with Haste I, 3x with Haste II, 4x with Haste III, 5x with Haste IV.",
   "authors": [
-    "Me!"
+    "Tetro48"
   ],
   "contact": {
     "homepage": "https://legacyfabric.net/",
     "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
   },
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "btw.tetro48.hpc.HastyProgressiveCraftingMod"
     ],
     "btw:addon": [
-      "btw.community.example.ExampleAddon"
+      "btw.tetro48.hpc.HastyProgressiveCraftingAddon"
     ]
   },
   "custom": {
-    "btw:addon_prefix": "EX"
+    "btw:addon_prefix": "HPC"
   },
   "mixins": [
-    "modid.mixins.json"
+    "hpc.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.19",

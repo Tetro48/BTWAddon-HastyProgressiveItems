@@ -1,12 +1,12 @@
-package btw.community.example;
+package btw.tetro48.hpc;
 
 import btw.AddonHandler;
 import btw.BTWAddon;
 
-public class ExampleAddon extends BTWAddon {
-    private static ExampleAddon instance;
+public class HastyProgressiveCraftingAddon extends BTWAddon {
+    private static HastyProgressiveCraftingAddon instance;
 
-    public ExampleAddon() {
+    public HastyProgressiveCraftingAddon() {
         super();
     }
 
