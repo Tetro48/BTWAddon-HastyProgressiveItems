@@ -23,7 +23,6 @@ public abstract class ProgressiveCraftingItemMixin extends Item {
         if (hasteEffect == null) return;
 		if (hasteEffect.getDuration() <= 0) return;
         int amplifier = hasteEffect.getAmplifier() + 1;
-        System.out.println("amplifier = " + amplifier);
         int iUseCount = player.getItemInUseCount();
         if (this.getMaxItemUseDuration(stack) - iUseCount <= this.getItemUseWarmupDuration()) return;
         if (iUseCount % 4 != 0) return;
