@@ -1,6 +1,7 @@
 package btw.tetro48.hpc.mixin;
 
 import btw.item.items.ProgressiveCraftingItem;
+import btw.world.util.difficulty.DifficultyParam;
 import net.minecraft.src.*;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -27,11 +28,9 @@ public abstract class ProgressiveCraftingItemMixin extends Item {
         if (this.getMaxItemUseDuration(stack) - iUseCount <= this.getItemUseWarmupDuration()) return;
         if (iUseCount % 4 != 0) return;
 
+		amplifier *= 1 + world.getDifficultyParameter(DifficultyParam.ProgressiveCraftingAdditionalProgressPerTick.class);
         int iDamage = stack.getItemDamage();
         iDamage -= amplifier;
-        if (world.getDifficulty().shouldIncreaseProgressiveCraftingSpeed()) {
-            iDamage -= amplifier;
-        }
 
         if (iDamage > 0) {
             stack.setItemDamage(iDamage);
