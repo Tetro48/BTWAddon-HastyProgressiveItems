@@ -1,7 +1,7 @@
 package btw.tetro48.hpc.mixin;
 
-import btw.item.items.ProgressiveCraftingItem;
-import btw.world.util.difficulty.DifficultyParam;
+import api.item.items.ProgressiveCraftingItem;
+import api.world.difficulty.DifficultyParam;
 import net.minecraft.src.*;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
