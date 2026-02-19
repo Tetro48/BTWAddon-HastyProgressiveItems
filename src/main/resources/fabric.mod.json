@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "hasty_progressive_crafting",
+  "id": "${mod_id}",
   "version": "${version}",
-  "name": "Hasty Progressive Crafting",
+  "name": "${name}",
   "description": "This speeds up progressive crafting items significantly with haste beacon. 2x with Haste I, 3x with Haste II, 4x with Haste III, 5x with Haste IV.",
   "authors": [
     "Tetro48"
