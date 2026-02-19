@@ -1,7 +1,7 @@
 package btw.tetro48.hpc;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
+import api.AddonHandler;
+import api.BTWAddon;
 
 public class HastyProgressiveCraftingAddon extends BTWAddon {
     private static HastyProgressiveCraftingAddon instance;
