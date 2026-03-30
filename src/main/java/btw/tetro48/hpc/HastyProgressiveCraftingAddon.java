@@ -11,6 +11,12 @@ public class HastyProgressiveCraftingAddon extends BTWAddon {
     }
 
     @Override
+    public void postSetup() {
+        this.shouldVersionCheck = false;
+        this.isRequiredClientAndServer = false;
+    }
+
+    @Override
     public void initialize() {
         AddonHandler.logMessage(this.getName() + " Version " + this.getVersionString() + " Initializing...");
     }
